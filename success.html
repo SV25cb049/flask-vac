@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+   <div style="font-family: Arial, sans-serif; max-width: 400"></div> 
+   <h1>Student Registration </h1> <hr>
+   <h3>Name : {{name}}</h3>
+   <h3>Email : {{email}}</h3>
+   <h3>Phone : {{phone}}</h3>
+   <h3>Department : {{department}}</h3>
+   <h3>Gender : {{gender}}</h3>
+   <h3>Skills : {{skills}}</h3>
+   <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+   </ul>
+</body>
+</html>
